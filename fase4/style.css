@@ -1,0 +1,76 @@
+body {
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.element {
+    position: relative;
+    font-size: 100px;
+    color: red;
+    cursor: pointer;
+}
+
+.element .filled {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in;
+}
+
+.element:hover .filled,
+.element.show .filled {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* .element {
+    margin: 50px 10px;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+.element:before {
+    border-bottom: 80px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+.element:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+} */
