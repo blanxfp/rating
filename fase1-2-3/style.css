@@ -27,10 +27,14 @@ body {
     transition: opacity 0.15s ease-in;
 }
 
-.element:hover .filled,
-.element.show .filled {
+.rating:hover .filled {
     opacity: 1;
     visibility: visible;
+}
+
+.element:hover ~ .element .filled {
+    opacity: 0;
+    visibility: hidden;
 }
 
 
